@@ -12,13 +12,24 @@ getInput(.......)
 
 }
 void getInput(STUDENT[],INTAKE[],ENROLLMENT[],OUTPUT[]){
-int i;
+int i=0;
 ifstream infile("input.txt");
 if(!infile){
 cout<<"fail to open the file";
 return 0;
 }
-while(infile>>STUDENT[]>>INTAKE[]>>ENROLLMENT[]>>OUTPUT[])
+while(infile>>STUDENT[i]){
+i++
+}
+while(infile>>INTAKE[]){
+i++
+}
+while(infile>>STUDENT[]>>INTAKE[]>>ENROLLMENT[]>>OUTPUT[]){
+i++
+}
+while(infile>>STUDENT[]>>INTAKE[]>>ENROLLMENT[]>>OUTPUT[]){
+i++
+}
 }
 void getLowest(){}
 void calTotal(){}
