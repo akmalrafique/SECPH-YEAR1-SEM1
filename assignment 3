@@ -6,8 +6,8 @@ int main(){
 const int size=20
 char student[size];
 int intake[size],enrollement[size],output[size]
-getInput(.......)
-
+getInput(.......);
+calTotal(..........);
 
 
 }
@@ -22,7 +22,7 @@ while(infile>>STUDENT[i]>>INTAKE[i]>>ENROLLMENT[i]>>OUTPUT[i]){
 i++;
 }
 }
-void getLowest(){}
 void calTotal(){}
+void getLowest(){}
 void getHighest(){}
 
