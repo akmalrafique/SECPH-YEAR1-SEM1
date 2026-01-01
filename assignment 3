@@ -18,17 +18,8 @@ if(!infile){
 cout<<"fail to open the file";
 return 0;
 }
-while(infile>>STUDENT[i]){
-i++
-}
-while(infile>>INTAKE[]){
-i++
-}
-while(infile>>STUDENT[]>>INTAKE[]>>ENROLLMENT[]>>OUTPUT[]){
-i++
-}
-while(infile>>STUDENT[]>>INTAKE[]>>ENROLLMENT[]>>OUTPUT[]){
-i++
+while(infile>>STUDENT[i]>>INTAKE[i]>>ENROLLMENT[i]>>OUTPUT[i]){
+i++;
 }
 }
 void getLowest(){}
