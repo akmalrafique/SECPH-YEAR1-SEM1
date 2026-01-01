@@ -10,7 +10,7 @@ getInput()
 
 }
 void getInput(){
-
+ifstream infile("input.txt")
 }
 void getLowest(){}
 void calTotal(){}
