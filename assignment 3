@@ -21,8 +21,10 @@ ifstream infile("input.txt");
 ofstream outfile("output.txt");
 outFile << left << setw(10) << "UNIVERSITY"<< right << setw(10) << "INTAKE"<< setw(12) << "ENROLMENT"<< setw(10) << "OUTPUT" << endl;
 while(infile<<student<<intake<<enroll<<output){
-outfile<<student<<" "<<intake<<" "<<enroll<<" "<<output<<endl;
+outfile<< left << setw(10)<<student<< right << setw(10)<<" "<<intake<< setw(10)<<enroll<<setw(10)<<output<<endl;
 }
+outfile<<"--------------------------------------------------------------------------------"<<endl;
+cout<<"total"<<setw(6)<<totalintake<<setw(6)<<totalenroll<<setw(6)<<totaloutput<<endl;
 }
 void getInput(STUDENT[],INTAKE[],ENROLLMENT[],OUTPUT[]){
 int i=0;
