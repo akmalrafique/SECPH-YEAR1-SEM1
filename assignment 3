@@ -5,11 +5,12 @@ using namespace std;
 int main(){
 const int size=20
 char student[size];
-int intake[size],enrollement[size],output[size]
+int intake[size],enrollement[size],output[size];
+int totalintake=0,totalenroll=0,totaloutput=0;
 getInput(.......);
-calTotal(..........);
-
-
+calTotal(intake,size);
+calTotal(enrollement,size);
+calTotal(output,size);
 }
 void getInput(STUDENT[],INTAKE[],ENROLLMENT[],OUTPUT[]){
 int i=0;
@@ -23,7 +24,7 @@ i++;
 }
 }
 int calTotal(){
-int totalintake=0,totalenroll=0,totaloutput=0;
+
 for(int a=0;a<size;a++){
 totalintake+=intake[a];
 totalenroll+=enroll[a];
