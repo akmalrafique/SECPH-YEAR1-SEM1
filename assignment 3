@@ -33,8 +33,11 @@ totall+=total[a];
 }
 return totall;
 }
-int getLowest(STUDENT[],ARRAY[],SIZE){
+int getLowest(char STUDENT[],int ARRAY[],int SIZE){
+int lowest=-1;
+while(int i=0;i<SIZE;i++){
 
+}
 
 
 
