@@ -36,18 +36,24 @@ totall+=total[a];
 }
 return totall;
 }
-int getLowest(,int ARRAY[],int SIZE){
-int lowest=9999;
+int getLowest(int ARRAY[],int SIZE){
+int lowest=9999,lowindex;
 for(int i=0;i<SIZE;i++){
 if(ARRAY[i]<lowest){
 lowest=ARRAY[i];
+lowindex=i;
 }
-return i;
 }
-
-
-
-
+return lowindex;
 }
-void getHighest(){}
+int getHighest(int ARRAY[],int SIZE){
+int highest=-1,highindex;
+for(int i=0;i<SIZE;i++){
+if(ARRAY[i]>highest){
+highest=ARRAY[i];
+highindex=i;
+}
+}
+return highindex;
+}
 
