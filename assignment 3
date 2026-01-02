@@ -21,18 +21,31 @@ outfile<< left << setw(10)<<student<< right << setw(10)<<" "<<intake<< setw(10)<
 outfile<<"--------------------------------------------------------------------------------"<<endl;
 cout<<"total"<<setw(6)<<totalintake<<setw(6)<<totalenroll<<setw(6)<<totaloutput<<endl;
 cout<<"averagae"<<setw(6)<<totalintake/size<<setw(6)<<totalenroll/size<<setw(6)<<totaloutput/size<<endl;
-index=getLowest(intake,size);
-cout<<"THE LOWEST NUMBER OF STUDENTS' INTAKE = "<<intake[index]<<"("<<student[index]<<")endl;
-index=getLowest(enrollment,size);
-cout<<"THE LOWEST NUMBER OF STUDENTS' ENROLMENT = "<<enrollment[index]<<"("<<student[index]<<")endl;
-index=getLowest(output,size);
-cout<<"THE LOWEST NUMBER OF STUDENTS' OUTPUT = "<<output[index]<<"("<<student[index]<<")endl<<endl;
-index2=getHighest(intake,size);
-cout<<"THE HIGHEST NUMBER OF STUDENTS' INTAKE = "<<intake[index2]<<"("<<student[index2]<<")endl;
-index2=getHighest(enrollment,size);
-cout<<"THE HIGHEST NUMBER OF STUDENTS' ENROLMENT = "<<enrollment[index2]<<"("<<student[index2]<<")endl;
-index2=getHighest(output,size);
-cout<<"THE HIGHEST NUMBER OF STUDENTS' OUTPUT = "<<output[index2]<<"("<<student[index2]<<")endl<<endl;
+int lowIntake = getLowest(intake, size);
+int lowEnrol = getLowest(enrol, size);
+int lowOutput = getLowest(output, size);
+int highIntake = getHighest(intake, size);
+int highEnrol = getHighest(enrol, size);
+int highOutput = getHighest(output, size);
+outFile << "\nTHE LOWEST NUMBER OF STUDENTS' INTAKE = "
+        << intake[lowIntake] << " (" << uni[lowIntake] << ")\n";
+outFile << "THE LOWEST NUMBER OF STUDENTS' ENROLMENT = "
+        << enrol[lowEnrol] << " (" << uni[lowEnrol] << ")\n";
+outFile << "THE LOWEST NUMBER OF STUDENTS' OUTPUT = "
+        << output[lowOutput] << " (" << uni[lowOutput] << ")\n\n";
+outFile << "THE HIGHEST NUMBER OF STUDENTS' INTAKE = "
+        << intake[highIntake] << " (" << uni[highIntake] << ")\n";
+outFile << "THE HIGHEST NUMBER OF STUDENTS' ENROLMENT = "
+        << enrol[highEnrol] << " (" << uni[highEnrol] << ")\n";
+outFile << "THE HIGHEST NUMBER OF STUDENTS' OUTPUT = "
+        << output[highOutput] << " (" << uni[highOutput] << ")\n\n";
+outFile << "THE RANGE OF NUMBER OF STUDENTS' INTAKE = "
+        << intake[highIntake] - intake[lowIntake] << endl;
+outFile << "THE RANGE OF NUMBER OF STUDENTS' ENROLMENT = "
+        << enrol[highEnrol] - enrol[lowEnrol] << endl;
+outFile << "THE RANGE OF NUMBER OF STUDENTS' OUTPUT = "
+        << output[highOutput] - output[lowOutput] << endl<<endl;
+outfile<<"--------------------------------------------------------------------------------"<<endl;
 }
 
 
