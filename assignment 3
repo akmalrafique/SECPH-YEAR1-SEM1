@@ -48,7 +48,6 @@ outfile<<"----------------------------------------------------------------------
 return 0;
 }
 
-
 int getInput(char STUDENT[][10],int INTAKE[],int ENROLMENT[],int OUTPUT[]){
 int i=0,list=0;
 ifstream infile("input.txt");
