@@ -6,6 +6,7 @@ int getInput(char[][10],int[],int[],int[]);
 int calTotal(int[],int);
 int getLowest(int[],int);
 int getHighest(int[],int);
+
 int main(){
 const int size=20;
 char student[size][10],xstudent[10];
